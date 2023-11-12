@@ -1,0 +1,85 @@
+/* Add this to your CSS file or include it in your React component styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: table; 
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+    display: table-header-group;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    display: table-cell;
+  }
+  
+  th:last-child,
+  td:last-child {
+    border-right: none; /* Remove the right border for the last column */
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Optional: Add some spacing between the table rows for better readability */
+  tbody tr:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
